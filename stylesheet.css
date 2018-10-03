@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active{
+  color: blue;
+  text-decoration: none;
+}
+
+body{
+  background: #151515 url('image/houzanji.jpg') no-repeat fixed left bottom;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Hiragino Kaku Gothic ProN" , Meiryo, sans-serif;
+}
+
+/*見出し*/
+.heading{
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before{
+  bottom: 5px;
+}
+
+/*ヘッダー*/
+.header{
+  padding: 170px 30px 80px;
+}
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+}
+
+/* about */
+.about{
+  padding: 80px 30px;
+  background-color: white;
+  color: black;
+}
+.about-text{
+  margin: 30px 0;
+  line-height: 2.5;
+}
+.icon{
+  border-radius:50%;
+  border-color:white;
+  border-width:5px;
+  border-style:solid;
+  box-shadow: 0 0 5px gray;
+}
+
+/*ikittokei*/
+.ikittokei{
+  background-color:#555555;
+  padding: 80px 0;
+}
+.ikittokei-wrapper{
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.ikittokei-box{
+  display: table-cell
+}
+.clock-icon{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: yellow;
+  font-size: 8rem;
+  line-height: 142px;
+}
+.ikittokei-text{
+  margin: 30px 0;
+  line-height: 2.5;
+}
+.ikittokei-text-right{
+  margin: 30px 0;
+  line-height: 2.5;
+  text-align: left;
+}
+
+/*works*/
+.works{
+  background-color: #fff;
+  padding: 80px 0;
+  color:#333;
+}
+.works-wrapper{
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.works-box{
+  display: table-cell;
+}
+.works-text{
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+/*books*/
+
+.books{
+  background-color:#555555;
+  padding: 80px 0;
+}
+.books-wrapper{
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+  margin: 30px 0;
+  line-height: 2.5;
+}
+.books-box{
+  display: table-cell;
+}
+
+/*belief*/
+.belief{
+  background-color: white;
+  color: black;
+  padding: 80px 0;
+}
+
+.belief-wrapper{
+  margin: 30px 0;
+  line-height: 2.5;
+  font-size:3rem;
+}
+
+.heading-text{
+  font-size:4rem;
+}
+
+/*contact*/
+.contact{
+  background-color: #555555;
+  padding: 80px 0;
+}
+.contact-wrapper{
+  margin: 30px 0;
+  line-height: 2.5;
+}
