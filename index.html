@@ -1,1 +1,215 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+      <header class="header">
+        <h1 class="site-title">BARAMATSU BONZO</h1>
+      </header>
+
+      <section class="about">
+        <h2 class="heading">ABOUT ME</h2></br>
+      </br>
+
+        <img src="image/profile.jpg" width="160" height="160" class="icon">
+        <p class="about-text">はじめまして。</br>
+        @baramatsubonzoといいます。</p>
+
+        <p class="about-text">
+          経歴</br>
+          同志社大学大学院文学研究科博士課程(前期)修了
+        </p>
+        <p class="about-text">
+          文系総合職での就職活動中、<strong>｢仕事への価値観｣</strong>(後述)を自分の中で見出す。</br>
+          その実現のためエンジニアとして生きることを決断。</p>
+          <p class="about-text">
+          2018.6.3～、<strong>｢文系完全未経験｣</strong>からプログラミングの勉強をスタート。</br>
+          <strong>独学</strong>で、3ヶ月目にして作りたかったオリジナルアプリを自作(Ruby on Rails)。</br>
+        </p>
+        <p class="about-text">主な使用言語/フレームワーク</br>
+          Ruby on Rails, html/css, javascript, Bootstrap
+        </p>
+      </section>
+
+      <section class="ikittokei">
+        <h2 class="heading">IKITTOKEI</h2>
+        <div class="ikittokei-wrapper">
+          <div class="ikittokei-box">
+            <i class="clock-icon far fa-clock"></i></br>
+            <h3 class="ikittokei-text">IKITTOKEI</h3>
+            <h3>URL:
+            <a href="https://protected-temple-85330.herokuapp.com/">https://protected-temple-85330.herokuapp.com/</a>
+            </h3>
+            <h3>
+            ソースコード:
+            <a href="https://github.com/baramatsubonzo/ikittokei">https://github.com/baramatsubonzo/ikittokei</a>
+            </h3>
+
+            <p class="ikittokei-text">
+              Pinterest風のECサイトです。</br>
+              インスタ等の画像投稿サイトのような場で、自分の時計を自慢し、</br>
+              そのままCtoCでの販売まで出来たらなと考え作りました。</br>
+              技術的には、MasonryやPay.jpを使ってみたかったので、試してみました。</br>
+            </p>
+
+          </div>
+          <div class="ikittokei-box">
+            <p class="ikittokei-text-right"><strong>今後の展望</strong></br>
+              例えば、家庭菜園や、服など写真映え(インスタ映え)するものを撮影し、</br>
+              そのままCtoCの個人消費サイトまで発展できないかと考えています。</br>
+              (備考)</br>
+              サイト作成後に、｢WEAR｣の存在を知りました。</br>
+              メルカリ/ジモティーなど総合系やファッション系を除く</br>
+              CtoCサービスはまだ参入の余地有りと見込み、</br>
+              別方面での展望も思案中です。
+            </p>
+              <p class="ikittokei-text-right"><strong>苦労した点</strong></br>
+                ・当初はインスタから画像を引っ張ってきたかったんですが、</br>
+                APIの改変でできなくなったので、断念しました。(API取得したのに…涙)</br>
+                ・自分の環境で、gem Bootstrapが上手く使えなかったり、Masonryが</br>
+                反映されなかったりがありましたが、Qiitaやteratailを参考しながら作りました。</br>
+                ・当初は、画像1つ1つにProductsモデルを紐付けようかと考えましたが、</br>
+                ややこしくなるだけだと考え、Postsモデルにそのまま値段を付けることにしました。</br>
+              </p>
+
+              <p class="ikittokei-text-right"><strong>参考サイト</strong></br>
+                Rails Tutorial,</br>
+                progate,</br>
+                How to build a Pinterest Clone in Rails 4(https://www.youtube.com/watch?v=abcnfFS_DS8&t=2041s),</br>
+                M3TechBlog(https://www.m3tech.blog/entry/2017/10/05/103507)
+              </p>
+
+          </div>
+        </div>
+      </section>
+      <section class="works">
+        <h2 class="heading">作品集</h2>
+        <div class="works-wrapper">
+          <div class="works-box">
+            <img src="image/progate.jpg" width="160" height="160">
+            <h1>Progate</h1>
+            <p class="works-text">
+              ProgateのRails講座にはまり、計4週してしまいました。</br>
+              途中、ローカル環境でも動かしたいと考え、環境構築し、</br>
+              作成してみました。</br>
+              その後、Rails Tutorialへ移行しました。</br>
+            </p>
+            <p>
+              ソースコード:
+              <a href="https://github.com/baramatsubonzo/progate_rails_app">https://github.com/baramatsubonzo/progate_rails_app</a>
+            </p>
+
+          </div>
+          <div class="works-box">
+            <img src="image/rails.png" width="160" height="160" >
+            <h1>Rails Tutorial</h1>
+              <p class="works-text">
+              Rails Tutorialのアプリを作ってみました。</br>
+              Rails Tutorialを計3週しましたが、</br>
+              自分が作りたいものを作った方が
+              理解が深まるなと考え、インスタのクローンアプリを作ることにしました。
+            </p>
+            <p>
+              ソースコード:
+              <a href="https://github.com/baramatsubonzo/sample_app">https://github.com/baramatsubonzo/sample_app</a>
+            </p>
+          </div>
+          <div class="works-box">
+            <img src="image/instagram.jpg" width="160" height="160">
+            <h1>Instagram クローンアプリ</h1>
+            <p class="works-text">
+              インスタ風のサイトをつくりたいなと思って作りました。</br>
+              サイトではHamlで書かれていたので、ERBに直すのに</br>
+              少し苦労しました。</br>
+              simple_form/paperclip等のgemも用いてみて、便利さを実感しました。
+            </p>
+            <p class="works-text">
+              ソースコード:
+              <a href="https://github.com/baramatsubonzo/Photogram">https://github.com/baramatsubonzo/Photogram</a>
+            </p>
+          </div>
+          <div class="works-box">
+            <img src="image/net_shop.png" width="160" height="160">
+            <h1>簡易ECサイト</h1>
+            <p class="works-text">
+              ECサイトを作ってみたくて、作りました。</br>
+              gem deviseを初めて使ってみて、便利さを知りました。</br>
+              ただし、IKITTOKEIでは勉強も兼ねて、ログインも自作しました。</br>
+            </p>
+            <p>ソースコード:
+            <a href="https://github.com/baramatsubonzo/ec_app">https://github.com/baramatsubonzo/ec_app</a>
+          </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="books">
+        <h2 class="heading">学習履歴</h2>
+        <div class="books-wrapper">
+          <div class="books-box">
+            <h1><strong>HTML/CSS</strong></h1>
+            <p>『HTML/CSS3　モダンコーディング』　翔泳社　2015年</p>
+          </div>
+          <div class="books-box">
+            <h1><strong>Ruby / Ruby on Rails / Rspec</strong></h1>
+            <p>『たのしいRuby 第5版』　SBクリエイティブ株式会社　2016年</p>
+            <p>『プロを目指す人のためのRuby入門』　技術評論社　2017年</p>
+            <p>『Ruby on Rails Tutorial 第4版』</br>
+              <a href="https://railstutorial.jp/">https://railstutorial.jp/</a>
+            </p>
+            <p>｢使えるRspec入門｣その1～その4 qiita記事</br>
+              <a href="https://qiita.com/jnchito/items/42193d066bd61c740612">https://qiita.com/jnchito/items/42193d066bd61c740612</a>
+            </p>
+          </div>
+          <div class="books-box">
+            <h1><strong>SQL</strong></h1>
+            <p>『MySQL　徹底入門　第3版』　翔泳社　2015年</p>
+
+          </div>
+          <div class="books-box">
+            <h1><strong>Others</strong></h1>
+            <p>『Webエンジニアの教科書』シーアンドアール研究所　2015年</p>
+            <p>⇒環境構築で主に参照。Vagrantでの環境構築の自動化、Ruby/Ruby on Railsの環境構築の理解に繋がる。</p>
+            <p>『体系的に学ぶ　安全なWebアプリケーションの作り方　第2版』　SBクリエイティブ株式会社　2018年</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="belief">
+        <h2 class="heading">仕事への価値観</h2>
+        <div class="belief-wrapper">
+
+          <p>
+            ｢生涯学び、好奇心を満たし続けたい｣</br>
+            ＋</br>
+            ｢勉強したことを即、仕事につなげたい｣</br>
+            ＋</br>
+            ｢自分の手で実感をもってサービスを生み出したい｣</br>
+          </br>
+        </p>
+        </div>
+        <h2 class="heading">座右の銘</h2>
+
+        <h1 class="heading-text"style="color:red;"><strong>｢できないなら、できるようになればいい｣</strong></h1>
+      </section>
+
+      <section class="contact">
+        <h2 class="heading">最後に</h2>
+        <div class="contact-wrapper">
+          <p>ご拝読ありがとうございました。</br>
+            もしご興味いただけましたら、</p>
+            <h1 style="color:blue;">baramatsubonzo@gmail.com</h1>
+            <p>までご連絡ください。 </p>
+          </section>
+
+        </div>
+
+      <section class="footer">
+        © baramatsubonzo
+      </section>
+  </body>
+</html>
